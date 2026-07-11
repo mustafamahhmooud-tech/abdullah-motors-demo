@@ -1,3 +1,7 @@
+html, body{
+    overflow-x:hidden;
+}
+
 *{
     margin:0;
     padding:0;
@@ -379,4 +383,88 @@ footer{
     background:black;
     text-align:center;
     padding:40px;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+        gap:20px;
+    }
+
+    .logo-container{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .logo{
+        width:50px;
+        height:50px;
+    }
+
+    nav ul{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .overlay h1{
+        font-size:38px;
+        text-align:center;
+        padding:0 20px;
+    }
+
+    .overlay p{
+        text-align:center;
+        padding:0 20px;
+        font-size:15px;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    button{
+        width:200px;
+    }
+
+    .contact-section h1,
+    .about-section h1{
+        font-size:40px;
+    }
+
+    .contact-text,
+    .about-text{
+        font-size:16px;
+        padding:0 15px;
+    }
+
+    .contact-form,
+    .about-mission,
+    .request-car{
+        width:95%;
+        padding:25px;
+    }
+
+    .request-car input{
+        width:100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        font-size:16px;
+    }
+
+    footer{
+        padding:25px;
+    }
+
 }
